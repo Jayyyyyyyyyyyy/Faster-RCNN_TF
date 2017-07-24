@@ -1,10 +1,11 @@
 import tensorflow as tf
 from networks.network import Network
-
+from labels.classlabels import class_labels
 
 #define
 
-n_classes = 21
+# n_classes = 3
+n_classes = len(class_labels)
 _feat_stride = [16,]
 anchor_scales = [8, 16, 32]
 
